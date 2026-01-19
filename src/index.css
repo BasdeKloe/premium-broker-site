@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  DE KLOE YACHTS DESIGN SYSTEM
+  ============================
+  Luxury yacht brokerage
+  Colors in HSL format for Tailwind compatibility
+*/
+
+@layer base {
+  :root {
+    /* Navy Color Palette */
+    --navy-50: 210 20% 93%;
+    --navy-100: 210 15% 85%;
+    --navy-200: 210 18% 70%;
+    --navy-300: 210 22% 55%;
+    --navy-400: 210 30% 40%;
+    --navy-500: 210 35% 28%;
+    --navy-600: 210 37% 22%;
+    --navy-700: 213 39% 17%;
+    --navy-800: 213 50% 12%;
+    --navy-900: 213 50% 12%;
+    --navy-950: 214 58% 8%;
+
+    /* Gold Color Palette */
+    --gold-50: 43 36% 96%;
+    --gold-100: 43 36% 93%;
+    --gold-200: 43 32% 86%;
+    --gold-300: 43 32% 78%;
+    --gold-400: 43 45% 62%;
+    --gold-500: 43 42% 58%;
+    --gold-600: 43 39% 51%;
+    --gold-700: 43 37% 44%;
+    --gold-800: 43 37% 35%;
+    --gold-900: 43 37% 26%;
+
+    /* Neutral Colors */
+    --neutral-50: 0 0% 96%;
+    --neutral-100: 210 14% 93%;
+    --neutral-200: 210 11% 85%;
+    --neutral-300: 216 9% 65%;
+    --neutral-400: 218 11% 46%;
+    --neutral-500: 219 13% 34%;
+    --neutral-600: 217 19% 27%;
+    --neutral-700: 217 24% 17%;
+    --neutral-800: 0 0% 10%;
+    --neutral-900: 222 47% 11%;
+
+    /* Semantic Design Tokens */
+    --background: 0 0% 100%;
+    --foreground: 217 19% 27%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 217 19% 27%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 217 19% 27%;
+    
+    --primary: 213 50% 12%;
+    --primary-foreground: 43 42% 58%;
+    
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 213 50% 12%;
+    
+    --muted: 210 14% 93%;
+    --muted-foreground: 218 11% 46%;
+    
+    --accent: 43 42% 58%;
+    --accent-foreground: 213 50% 12%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 210 14% 93%;
+    --input: 210 14% 93%;
+    --ring: 43 42% 58%;
+    
+    --radius: 0.125rem;
+
+    /* Custom shadows */
+    --shadow-subtle: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-card: 0 4px 16px rgba(0, 0, 0, 0.08);
+    --shadow-card-hover: 0 8px 32px rgba(196, 169, 98, 0.15);
+    --shadow-elevated: 0 12px 48px rgba(0, 0, 0, 0.12);
+
+    /* Sidebar tokens */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 213 50% 12%;
+    --foreground: 0 0% 100%;
+    
+    --card: 213 50% 12%;
+    --card-foreground: 0 0% 100%;
+    
+    --popover: 213 50% 12%;
+    --popover-foreground: 0 0% 100%;
+    
+    --primary: 43 42% 58%;
+    --primary-foreground: 213 50% 12%;
+    
+    --secondary: 213 39% 17%;
+    --secondary-foreground: 0 0% 100%;
+    
+    --muted: 213 39% 17%;
+    --muted-foreground: 210 11% 85%;
+    
+    --accent: 43 42% 58%;
+    --accent-foreground: 213 50% 12%;
+    
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 213 39% 17%;
+    --input: 213 39% 17%;
+    --ring: 43 42% 58%;
+    
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background font-sans text-foreground antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-neutral-800;
+  }
+
+  ::selection {
+    background-color: hsl(var(--gold-500));
+    color: white;
+  }
+
+  ::-moz-selection {
+    background-color: hsl(var(--gold-500));
+    color: white;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply mx-auto max-w-7xl px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+
+  /* Typography classes */
+  .text-hero {
+    @apply font-serif text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight;
+  }
+
+  .text-h1 {
+    @apply font-serif text-3xl md:text-4xl lg:text-5xl font-medium leading-tight tracking-tight;
+  }
+
+  .text-h2 {
+    @apply font-serif text-2xl md:text-3xl lg:text-4xl font-medium leading-snug;
+  }
+
+  .text-h3 {
+    @apply font-serif text-xl md:text-2xl font-medium leading-snug;
+  }
+
+  .text-body-lg {
+    @apply font-sans text-base sm:text-lg md:text-xl leading-relaxed;
+  }
+
+  .text-body {
+    @apply font-sans text-base md:text-lg leading-relaxed;
+  }
+
+  .text-body-sm {
+    @apply font-sans text-sm md:text-base leading-relaxed;
+  }
+
+  .text-caption {
+    @apply font-sans text-xs md:text-sm font-medium uppercase tracking-widest;
+  }
+
+  .text-overline {
+    @apply font-sans text-xs md:text-sm font-medium uppercase tracking-[0.2em];
+  }
+
+  /* Gold accent text */
+  .text-gold {
+    color: hsl(var(--gold-500));
+  }
+
+  /* Navy backgrounds */
+  .bg-navy {
+    background-color: hsl(var(--navy-800));
+  }
+
+  .bg-navy-dark {
+    background-color: hsl(var(--navy-950));
+  }
+
+  .bg-navy-light {
+    background-color: hsl(var(--navy-700));
+  }
+
+  /* Off-white section background */
+  .bg-off-white {
+    background-color: hsl(var(--neutral-50));
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Gold gradient text */
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(var(--gold-400)), hsl(var(--gold-600)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Navy overlay gradient */
+  .overlay-navy {
+    background: linear-gradient(to bottom, 
+      hsla(var(--navy-950), 0.75) 0%, 
+      hsla(var(--navy-800), 0.6) 50%,
+      hsla(var(--navy-950), 0.85) 100%
+    );
+  }
+
+  /* Card hover shadow with gold glow */
+  .shadow-card-hover {
+    box-shadow: var(--shadow-card-hover);
+  }
+
+  /* Transition utilities */
+  .transition-smooth {
+    @apply transition-all duration-300 ease-out;
+  }
+
+  .transition-slow {
+    @apply transition-all duration-500 ease-out;
+  }
+}
