@@ -6,6 +6,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Anchor, Heart, Compass } from "lucide-react";
 import { useSEO, useStructuredData } from "@/utils/seo";
+import storyImage1 from "@/assets/IMG_9468.jpeg";
+import yachtAerial from "@/assets/yacht-aerial.jpg";
+import heroYacht from "@/assets/hero-yacht.jpg";
 
 const OurStory = () => {
   useSEO({
@@ -73,7 +76,7 @@ const OurStory = () => {
             <AnimatedSection direction="right" delay={0.2}>
               <div className="relative h-[350px] xs:h-[400px] sm:h-[500px] md:h-[650px] lg:h-[750px] rounded-sm overflow-hidden shadow-card">
                 <img
-                  src="/src/assets/IMG_9468.jpeg"
+                  src={storyImage1}
                   alt="Bas de Kloe on yacht"
                   className="w-full h-full object-cover object-center"
                 />
@@ -91,7 +94,7 @@ const OurStory = () => {
             <AnimatedSection direction="right" delay={0.2} className="order-1 lg:order-2">
               <div className="relative h-[280px] xs:h-[320px] sm:h-[350px] md:h-[400px] lg:h-[500px] rounded-sm overflow-hidden shadow-card">
                 <img
-                  src="/src/assets/yacht-aerial.jpg"
+                  src={yachtAerial}
                   alt="Motor yacht aerial view"
                   className="w-full h-full object-cover"
                 />
@@ -112,7 +115,7 @@ const OurStory = () => {
                     That childhood passion evolved into a lifelong dedication to motor yachts and the art of yacht building. My hands-on experience with motor yachts, combined with specialized studies and internships in yacht construction, gave me an insider's perspective on what truly makes a superyacht exceptional. I've walked the shipyard floors, studied the engineering, and witnessed firsthand how vision transforms into reality through meticulous craftsmanship.
                   </p>
                   <p>
-                    But what truly drives me is the convergence of three passions: the thrill of open sea cruising, the fascinating complexity of yacht build projects, and the art of building meaningful client relationships. I recognized that acquiring a superyacht, particularly a custom new build, is one of the most significant decisions in a person's life. It deserves a guide who doesn't just understand the technical specifications, but who shares your excitement for the journey ahead.
+                    But what truly drives me is the convergence of three passions: the thrill of open sea cruising, the fascinating complexity of yacht build projects, and the art of building meaningful client relationships. I recognized that acquiring a yacht, particularly a custom new build, is one of the most significant decisions in a person's life. It deserves a guide who doesn't just understand the technical specifications, but who shares your excitement for the journey ahead.
                   </p>
                   <p>
                     My approach is deeply personal. I immerse myself in every build project, every client vision, and every detail that transforms a contract into your dream vessel. This foundation in yacht construction, combined with genuine enthusiasm for client partnership, allows me to guide you with both expertise and authentic passion.
@@ -146,7 +149,7 @@ const OurStory = () => {
             <AnimatedSection direction="left">
               <div className="relative h-[280px] xs:h-[320px] sm:h-[350px] md:h-[400px] lg:h-[500px] rounded-sm overflow-hidden shadow-card">
                 <img
-                  src="/src/assets/hero-yacht.jpg"
+                  src={heroYacht}
                   alt="Professional yacht expertise"
                   className="w-full h-full object-cover object-[75%_center]"
                 />
@@ -164,13 +167,13 @@ const OurStory = () => {
                 <h2 className="text-h1 text-navy-800">Your Trusted Partner</h2>
                 <div className="space-y-4 text-body text-neutral-600">
                   <p>
-                    At De Kloe Yachts, I specialize in connecting discerning clients with the world's finest Dutch shipyards for bespoke superyacht projects. My focus is singular: to be your trusted partner throughout the entire journey, from initial vision to final delivery and beyond. Having studied yacht construction and experienced the build process from the inside, I can anticipate challenges, celebrate milestones, and ensure your vision is realized with uncompromising quality.
+                    At De Kloe Yachts, I specialize in connecting discerning clients with the world's finest shipyards for bespoke yacht projects. My focus is singular: to be your trusted partner throughout the entire journey, from initial vision to final delivery and beyond. Having studied yacht construction and experienced the build process from the inside, I can anticipate challenges, celebrate milestones, and ensure your vision is realized with uncompromising quality.
                   </p>
                   <p>
                     I take pride in understanding not just what you want in a yacht, but why you want it. Every conversation, every decision, every detail is guided by a genuine passion for motor yachts and a deep respect for the journey you're undertaking.
                   </p>
                   <p>
-                    Whether you're envisioning your first superyacht or adding to an established fleet, you deserve a partner who combines industry knowledge, construction expertise, and authentic enthusiasm for your success. That's precisely what I offer. Not just a transaction, but a relationship built on trust, shared passion, and our mutual love for the sea.
+                    Whether you're envisioning your first yacht or adding to an established fleet, you deserve a partner who combines industry knowledge, construction expertise, and authentic enthusiasm for your success. That's precisely what I offer. Not just a transaction, but a relationship built on trust, shared passion, and our mutual love for the sea.
                   </p>
                 </div>
               </div>
