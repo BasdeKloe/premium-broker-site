@@ -8,6 +8,9 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import OurStory from "./pages/OurStory";
+import Privacy from "./pages/Privacy";
+import Terms from "./pages/Terms";
+import Disclaimer from "./pages/Disclaimer";
 import NotFound from "./pages/NotFound";
 import { ScrollToTop } from "./components/layout/ScrollToTop";
 
