@@ -206,7 +206,7 @@ const Services = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 md:gap-8">
             {[
               { icon: Users, value: "1-on-1", label: "Personal Guidance" },
-              { icon: Clock, value: "24/7", label: "Availability" },
+              { icon: Clock, value: "24h", label: "Response" },
               { icon: FileCheck, value: "100%", label: "Transparency" },
             ].map((stat, index) => (
               <AnimatedSection key={stat.label} direction="up" delay={index * 0.1}>
