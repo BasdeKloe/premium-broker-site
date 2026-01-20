@@ -93,8 +93,7 @@ const Terms = () => {
               <h3 className="text-h3 text-navy-800 mt-8 mb-4">6.1 Commission Structure</h3>
               <div className="bg-off-white p-6 rounded-sm mb-6">
                 <ul className="list-disc pl-6 text-body text-neutral-600 space-y-2">
-                  <li><strong>5%</strong> of total contract value for projects under €50,000,000</li>
-                  <li><strong>2-3%</strong> of total contract value for projects from €50,000,000</li>
+                  <li>The commision will be <strong>2-5%</strong> of the contract value </li>
                 </ul>
               </div>
 
