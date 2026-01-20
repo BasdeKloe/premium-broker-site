@@ -74,6 +74,13 @@ export const Header = () => {
               {NAV_LINKS.map(link => <Link key={link.href} to={link.href} className={cn("font-serif text-2xl text-white/80 hover:text-gold-500 transition-colors", location.pathname === link.href && "text-gold-500")}>
                   {link.label}
                 </Link>)}
+
+              {/* Contact Button in Mobile Menu */}
+              <div className="mt-4">
+                <Button variant="hero" size="lg" className="w-full" asChild>
+                  <Link to="/contact">Contact</Link>
+                </Button>
+              </div>
             </nav>
 
             {/* Footer */}
