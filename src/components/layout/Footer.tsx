@@ -95,8 +95,9 @@ export const Footer = () => {
               </Link>
               <Link to="/terms" className="hover:text-gold-500 transition-colors">
                 Terms & Conditions
+              </Link>
               <Link to="/disclaimer" className="hover:text-gold-500 transition-colors">
-                  Disclaimer
+                Disclaimer
               </Link>
             </div>
           </div>
